@@ -31,7 +31,7 @@ pip install pillow pypdf2 python-dotenv openai
 ### 1. Extract Slide Titles
 
 ```python
-from presentation_tools import extract_titles_from_images
+from pdf_tools import extract_titles_from_images
 
 # 提取所有圖片的標題並輸出成 slide_titles.txt
 extract_titles_from_images("slides_folder")
@@ -40,7 +40,7 @@ extract_titles_from_images("slides_folder")
 ### 2. Extract Outline / Agenda from One Slide
 
 ```python
-from presentation_tools import extract_outline_from_image
+from pdf_tools import extract_outline_from_image
 
 outline = extract_outline_from_image("slides_folder/slide1.jpg")
 print(outline)
@@ -49,7 +49,7 @@ print(outline)
 ### 3. Images to PDF with Nested Bookmarks
 
 ```python
-from presentation_tools import images_to_pdf_with_nested_bookmarks
+from pdf_tools import images_to_pdf_with_nested_bookmarks
 
 chapters = [
     {"title": "前言", "page": 1},
@@ -65,7 +65,7 @@ images_to_pdf_with_nested_bookmarks("slides_folder", chapters)
 ### 4. Merge Multiple PDFs with Bookmarks
 
 ```python
-from presentation_tools import merge_pdfs
+from pdf_tools import merge_pdfs
 
 chapter_list = [
     ("Intro", "intro.pdf"),
