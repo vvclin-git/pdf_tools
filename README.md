@@ -1,6 +1,6 @@
 # pdf_tools
 
-# Presentation Tools
+# Some Handy PDF Tools
 
 **A Python toolkit for:**
 - Extracting slide titles and outlines from images (with OpenAI Vision)
