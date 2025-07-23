@@ -1,4 +1,4 @@
-from .functions import (
+from .scripts import (
     clean_title,
     encode_image_to_data_url,
     extract_titles_from_images,
